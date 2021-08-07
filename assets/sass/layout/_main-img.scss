@@ -1,0 +1,18 @@
+.main-img {
+    position: relative;
+    background-image: url(../img/img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 0%;
+    float: left;
+    height: 62.5%;
+    width: 70.2343%;
+}
+#info {
+    background-color: $white;
+    height: 136px;
+    width:  469px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

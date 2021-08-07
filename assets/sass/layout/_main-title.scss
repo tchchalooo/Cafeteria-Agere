@@ -1,0 +1,41 @@
+.main-title {
+    position: relative;
+    float: left;
+    height: 62.5%;
+    width: 29.7657%;
+    padding-top: 3.75%;
+    padding-left: 5.547%;
+    h1 {
+        font-family: 'PT Mono', monospace;
+        font-size: 70px;
+        margin-bottom: 4.8rem;
+    }
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+#yellow-shadow {
+    background-color: $coral;
+    height: 136px;
+    width: 136px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#orange-arrow {
+    background-color: $flame;
+    height: 136px;
+    width: 136px;
+    position: absolute;
+    bottom: 21px;
+    left: -15px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+}
