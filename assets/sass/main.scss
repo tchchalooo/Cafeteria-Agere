@@ -1,7 +1,11 @@
 //main.scss #Manifest file
 //Typography
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@300&display=swap');
-//abstract
+//Abstract
 @import 'abstract/variables';
 @import 'base/reset';
 @import 'base/typography';
+//Components
+@import 'components/buttons';
+//Layout
+@import 'layout/navbar';
