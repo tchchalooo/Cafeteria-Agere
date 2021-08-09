@@ -7,12 +7,26 @@
     float: left;
     height: 62.5%;
     width: 70.2343%;
+    h2 {
+        font-family: $pt-mono;
+        font-size: 40px;
+        font-weight: $regular;
+    }
+    p {
+        font-family: $roboto;
+        font-weight: $light;
+        font-size: 16px;
+    }
 }
 #info {
     background-color: $white;
     height: 136px;
-    width:  469px;
+    width:  52.169%;
+    padding: 1.25rem 2.625rem;
     position: absolute;
     bottom: 0;
     right: 0;
+}
+#middle-child {
+    max-width: 7rem;
 }

@@ -3,9 +3,25 @@
     height: 37.5%;
     width: 70.2343%;
 }
+#us {
+    width: 41%;
+    float: left;
+    padding-top: 5.896%;
+    padding-left: 8.233%;
+    h2 {
+        font-family: $pt-mono;
+        font-size: 30px;
+        font-weight: $regular;
+    }
+    p {
+        font-family: $roboto;
+        font-weight: $light;
+        font-size: 16px;
+    }
+}
 #blue-shadow {
     background-color: $blue-de-france;
     height: 87.8787%;
-    width: 469px;
+    width: 52.169%;
     float: right;
 }

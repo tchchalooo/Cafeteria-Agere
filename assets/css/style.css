@@ -150,6 +150,7 @@ form a:first-child {
   box-sizing: border-box;
   padding-top: 6rem;
   height: 100vh;
+  width: 100vw;
 }
 
 .main-img {
@@ -162,14 +163,29 @@ form a:first-child {
   height: 62.5%;
   width: 70.2343%;
 }
+.main-img h2 {
+  font-family: "PT Mono", monospace;
+  font-size: 40px;
+  font-weight: 400;
+}
+.main-img p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
 
 #info {
   background-color: #FFFFFF;
   height: 136px;
-  width: 469px;
+  width: 52.169%;
+  padding: 1.25rem 2.625rem;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+#middle-child {
+  max-width: 7rem;
 }
 
 .main-title {
@@ -183,7 +199,6 @@ form a:first-child {
 .main-title h1 {
   font-family: "PT Mono", monospace;
   font-size: 70px;
-  margin-bottom: 4.8rem;
 }
 .main-title h3 {
   font-family: "Roboto", sans-serif;
@@ -207,7 +222,7 @@ form a:first-child {
   position: absolute;
   bottom: 21px;
   left: -15px;
-  z-index: 3;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,10 +235,27 @@ form a:first-child {
   width: 70.2343%;
 }
 
+#us {
+  width: 41%;
+  float: left;
+  padding-top: 5.896%;
+  padding-left: 8.233%;
+}
+#us h2 {
+  font-family: "PT Mono", monospace;
+  font-size: 30px;
+  font-weight: 400;
+}
+#us p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
 #blue-shadow {
   background-color: #3C91E6;
   height: 87.8787%;
-  width: 469px;
+  width: 52.169%;
   float: right;
 }
 
@@ -242,8 +274,8 @@ form a:first-child {
   background-image: url(../img/img-3.png);
   background-size: cover;
   background-position-x: 50%;
-  height: 165px;
-  width: 96px;
+  height: 62.5%;
+  width: 25.1968%;
   position: relative;
   right: 57px;
 }
