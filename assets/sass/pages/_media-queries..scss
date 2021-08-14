@@ -1,0 +1,147 @@
+@media (max-width: 1024px) {
+    //Partial _responsive-main.scss
+    .responsive-main {
+        box-sizing: border-box;
+        padding-top: 6rem;
+        height: fit-content;
+        width: 100vw;
+    }
+
+    //Partial _main-img.scss
+    .main-img {
+        position: relative;
+        background-image: url(../img/img-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 20% 0%;
+        float: left;
+        height: 50vh;
+        width: 100%;
+        h2 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    #info {
+        height: 136px;
+        width:  60%;
+        padding: 1.25rem 2.625rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    #middle-child {
+        max-width: none;
+    }
+
+    //Partial _main-title.scss
+    .main-title {
+        position: relative;
+        float: left;
+        height: 50vh;
+        width: 40%;
+        padding-top: 3.75%;
+        padding-left: 5.547%;
+        h1 {
+            font-family: 'PT Mono', monospace;
+            font-size: 70px;
+        }
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+    
+    #yellow-shadow {
+        background-color: $coral;
+        height: 136px;
+        width: 136px;
+        position: absolute;
+        bottom: 0;
+        left: 62.06%;
+    }
+    
+    #orange-arrow {
+        background-color: $flame;
+        height: 136px;
+        width: 136px;
+        position: absolute;
+        bottom: 21px;
+        left: 243px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+    }
+
+    //Partial _secondary-img.scss
+    .secondary-img {
+        position: relative;
+        background-image: url(../img/img-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 0%;
+        float: right;
+        height: 50vh;
+        width: 60%;
+    }
+    #coffee-beans {
+        background-image: url(../img/img-3.png);
+        background-size: cover;
+        background-position-x: 50%;
+        height: 43%;
+        width: 15%;
+        position: relative;
+        right: 8%;
+    }
+
+    //Partial _location.scss
+    .location {
+        float: left;
+        height: 35vh;
+        width: 100%;
+    }
+    #us {
+        width: 41%;
+        float: left;
+        padding-top: 5.896%;
+        padding-left: 8.233%;
+        background-color: $white;
+        h2 {
+            font-family: $pt-mono;
+            font-size: 30px;
+            font-weight: $regular;
+        }
+        p {
+            font-family: $roboto;
+            font-weight: $light;
+            font-size: 16px;
+        }
+    }
+    
+    #blue-shadow {
+        background-color: $blue-de-france;
+        height: 87.8787%;
+        width: 52.169%;
+        position: relative;
+        bottom: 79.54545%;
+        left: 47.831%;
+        z-index: -2;
+    }
+    
+    #location-map {
+        background-image: url(../img/img-4.png);
+        background-position: 0% 0%;
+        background-size: cover;
+        height: 79.54545%;
+        width: 44.04894%;
+        position: relative;
+        top: 10.23%;
+        left: 44.384%;
+        z-index: -1
+    }
+}
