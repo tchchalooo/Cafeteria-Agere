@@ -124,10 +124,6 @@ img {
   padding-right: 1.563rem;
 }
 
-.navbar-toggler {
-  margin-right: 1.6rem;
-}
-
 .black-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%280, 0, 0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -162,6 +158,7 @@ form a:first-child {
   float: left;
   height: 62.5%;
   width: 70.2343%;
+  clear: both;
 }
 .main-img h2 {
   font-family: "PT Mono", monospace;
@@ -227,6 +224,7 @@ form a:first-child {
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
+  font-size: 4rem;
 }
 
 .location {
@@ -306,9 +304,6 @@ form a:first-child {
 
   .main-img {
     position: relative;
-    background-image: url(../img/img-1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: 20% 0%;
     float: left;
     height: 50vh;
@@ -324,7 +319,7 @@ form a:first-child {
   #info {
     height: 136px;
     width: 60%;
-    padding: 1.25rem 2.625rem;
+    padding: 1.1rem 2rem;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -343,53 +338,25 @@ form a:first-child {
     padding-left: 5.547%;
   }
   .main-title h1 {
-    font-family: "PT Mono", monospace;
-    font-size: 70px;
-  }
-  .main-title h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 65px;
   }
 
   #yellow-shadow {
-    background-color: #EACB31;
-    height: 136px;
-    width: 136px;
-    position: absolute;
-    bottom: 0;
-    left: 62.06%;
+    left: 71%;
+    z-index: 2;
   }
 
   #orange-arrow {
-    background-color: #E4572E;
-    height: 136px;
-    width: 136px;
-    position: absolute;
-    bottom: 21px;
-    left: 243px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
+    left: 65%;
+    z-index: 3;
   }
 
   .secondary-img {
-    position: relative;
-    background-image: url(../img/img-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 0%;
-    float: right;
     height: 50vh;
     width: 60%;
   }
 
   #coffee-beans {
-    background-image: url(../img/img-3.png);
-    background-size: cover;
-    background-position-x: 50%;
     height: 43%;
     width: 15%;
     position: relative;
@@ -397,32 +364,20 @@ form a:first-child {
   }
 
   .location {
-    float: left;
     height: 35vh;
     width: 100%;
   }
 
   #us {
-    width: 41%;
-    float: left;
-    padding-top: 5.896%;
-    padding-left: 8.233%;
-    background-color: #FFFFFF;
+    padding-left: 5.547%;
   }
   #us h2 {
-    font-family: "PT Mono", monospace;
-    font-size: 30px;
-    font-weight: 400;
-  }
-  #us p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
+    font-size: 25px;
   }
 
   #blue-shadow {
     background-color: #3C91E6;
-    height: 87.8787%;
+    height: 75%;
     width: 52.169%;
     position: relative;
     bottom: 79.54545%;
@@ -431,15 +386,96 @@ form a:first-child {
   }
 
   #location-map {
-    background-image: url(../img/img-4.png);
-    background-position: 0% 0%;
-    background-size: cover;
-    height: 79.54545%;
-    width: 44.04894%;
-    position: relative;
-    top: 10.23%;
-    left: 44.384%;
-    z-index: -1;
+    height: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .responsive-main {
+    padding-top: 4rem;
+  }
+
+  .navbar {
+    height: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #img-logo {
+    max-height: 3rem;
+  }
+
+  .main-img {
+    height: 45vh;
+  }
+  .main-img h2 {
+    font-size: 25px;
+  }
+  .main-img p {
+    font-size: 12px;
+  }
+
+  #info {
+    height: 100px;
+    width: 100%;
+  }
+
+  .main-title {
+    height: 35vh;
+    width: 50%;
+    padding-top: 3.75%;
+    padding-left: 5.547%;
+  }
+  .main-title h1 {
+    font-size: 40px;
+  }
+  .main-title h3 {
+    font-size: 16px;
+  }
+
+  #yellow-shadow {
+    height: 80px;
+    width: 80px;
+    left: 79%;
+  }
+
+  #orange-arrow {
+    height: 80px;
+    width: 80px;
+    left: 74%;
+    font-size: 2rem;
+  }
+
+  .secondary-img {
+    height: 35vh;
+    width: 50%;
+  }
+
+  #coffee-beans {
+    width: 25%;
+    right: 0;
+  }
+
+  .location {
+    height: 35vh;
+    width: 100%;
+  }
+
+  #us {
+    padding-left: 5.547%;
+  }
+  #us h2 {
+    font-size: 18px;
+  }
+  #us p {
+    font-size: 12px;
+  }
+
+  #blue-shadow {
+    width: 50%;
+  }
+
+  #location-map {
+    height: 50%;
   }
 }
 

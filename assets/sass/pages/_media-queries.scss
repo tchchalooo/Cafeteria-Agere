@@ -10,9 +10,6 @@
     //Partial _main-img.scss
     .main-img {
         position: relative;
-        background-image: url(../img/img-1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
         background-position: 20% 0%;
         float: left;
         height: 50vh;
@@ -27,7 +24,7 @@
     #info {
         height: 136px;
         width:  60%;
-        padding: 1.25rem 2.625rem;
+        padding: 1.1rem 2rem;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -45,54 +42,26 @@
         padding-top: 3.75%;
         padding-left: 5.547%;
         h1 {
-            font-family: 'PT Mono', monospace;
-            font-size: 70px;
-        }
-        h3 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 20px;
-            font-weight: 300;
+            font-size: 65px;
         }
     }
     
     #yellow-shadow {
-        background-color: $coral;
-        height: 136px;
-        width: 136px;
-        position: absolute;
-        bottom: 0;
-        left: 62.06%;
+        left: 71%;
+        z-index: 2;
     }
     
     #orange-arrow {
-        background-color: $flame;
-        height: 136px;
-        width: 136px;
-        position: absolute;
-        bottom: 21px;
-        left: 243px;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: $white;
+        left: 65%;
+        z-index: 3;
     }
 
     //Partial _secondary-img.scss
     .secondary-img {
-        position: relative;
-        background-image: url(../img/img-2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 0%;
-        float: right;
         height: 50vh;
         width: 60%;
     }
     #coffee-beans {
-        background-image: url(../img/img-3.png);
-        background-size: cover;
-        background-position-x: 50%;
         height: 43%;
         width: 15%;
         position: relative;
@@ -101,31 +70,20 @@
 
     //Partial _location.scss
     .location {
-        float: left;
         height: 35vh;
-        width: 100%;
+        width: 100%;        
     }
+
     #us {
-        width: 41%;
-        float: left;
-        padding-top: 5.896%;
-        padding-left: 8.233%;
-        background-color: $white;
+        padding-left: 5.547%;
         h2 {
-            font-family: $pt-mono;
-            font-size: 30px;
-            font-weight: $regular;
-        }
-        p {
-            font-family: $roboto;
-            font-weight: $light;
-            font-size: 16px;
+            font-size: 25px;
         }
     }
     
     #blue-shadow {
         background-color: $blue-de-france;
-        height: 87.8787%;
+        height: 75%;
         width: 52.169%;
         position: relative;
         bottom: 79.54545%;
@@ -134,14 +92,99 @@
     }
     
     #location-map {
-        background-image: url(../img/img-4.png);
-        background-position: 0% 0%;
-        background-size: cover;
-        height: 79.54545%;
-        width: 44.04894%;
-        position: relative;
-        top: 10.23%;
-        left: 44.384%;
-        z-index: -1
+        height: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    //Partial _responsive-main.scss
+    .responsive-main {
+        padding-top: 4rem;
+    }
+    //Partial _navbar.scss
+    .navbar {
+        height: 4rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    #img-logo {
+        max-height: 3rem;
+    }
+
+    //Partial _main-img.scss
+    .main-img {
+        height: 45vh;
+        h2 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+    #info {
+        height: 100px;
+        width:  100%;
+    }
+
+    //Partial _main-title.scss
+    .main-title {
+        height: 35vh;
+        width: 50%;
+        padding-top: 3.75%;
+        padding-left: 5.547%;
+        h1 {
+            font-size: 40px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+    }
+    
+    #yellow-shadow {
+        height: 80px;
+        width: 80px;
+        left: 79%;
+    }
+    
+    #orange-arrow {
+        height: 80px;
+        width: 80px;
+        left: 74%;
+        font-size: 2rem;
+    }
+
+    //Partial _secondary-img.scss
+    .secondary-img {
+        height: 35vh;
+        width: 50%;
+    }
+    #coffee-beans {
+        width: 25%;
+        right: 0;
+    }
+
+    //Partial _location.scss
+    .location {
+        height: 35vh;
+        width: 100%;        
+    }
+
+    #us {
+        padding-left: 5.547%;
+        h2 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+    
+    #blue-shadow {
+        width: 50%;
+    }
+    
+    #location-map {
+        height: 50%;
     }
 }
